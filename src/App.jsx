@@ -8,8 +8,8 @@ const SPAWN_DISTANCE=1000;
 const PLAYER_DISTANCE=80;
 const REMOVE_DISTANCE=-50;
 const JUMP_DURATION=480;
-const  BASE_SPEED=6;
-const MAX_SPEED=20;
+const  BASE_SPEED=15;
+const MAX_SPEED=100;
 const SPEED_RAMP_TIME=45000;
 
 function distanceToTop(distance){
