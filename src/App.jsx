@@ -89,6 +89,7 @@ export default function App(){
                 case 'ArrowUp':
                 case 'w':
                 case'W':
+                case ' ':
                     e.preventDefault();
                     doJump();
                     break;
@@ -241,6 +242,11 @@ export default function App(){
     return (
         <div className="screen game-screen">
             <div className="hud">
+                <div className="hud-item">Score:{score}</div>
+                <div className="hud-item">Coins: {coins}</div>
+                <div className="hud-item">Speed:{speedDisplay.toFixed(1)}</div>
+            </div>
+            <div className="track">
                 <div className="lane-line" style={{left:'33.33%'}}/>
                 <div className="lane-line" style={{left:'66.66%'}}/>
 
